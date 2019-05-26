@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="C:\Users\DVKHMB\OneDrive\Desktop\CSE391_175A071210_175A071256\BTTH\photo-list.js" defer></script>
+    <script src="C:\Users\DVKHMB\OneDrive\Desktop\CSE391_175A071210_175A071256\BTTH\photo.js" defer></script>
+</head>
+<style>
+    body {
+  font-family: Helvetica, sans-serif;
+}
+#album-view img {
+  border: 1px solid slategray;
+  margin: 5px;
+  padding: 5px;
+  height: 150px;
+}
+#modal-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal-view img {
+  max-height: 100%;
+  max-width: 100%;
+}
+#modal-view.hidden {
+  display: none;
+}
+.no-scroll {
+  overflow: hidden;
+}
+</style>
+<body>
+    <h1>My class</h1>
+    <section id="album-view"></section>
+    <section id="modal-view" class="hidden"></section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</body>
+</html>
